@@ -29,6 +29,3 @@ GameForge Catalogue is a simple e-shop for digital games that let users purchase
 1. Clone or download this repository.
 2. Ensure all files remain in the same root directory level.
 3. Open <span style="color: orange">index.html</span> in a web browser.
-
-## 📕 AI Tool Usage Statement
-[AI Tool Usage Statement](aiUsageStatement.md)
