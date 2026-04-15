@@ -29,12 +29,11 @@ function loadJSON(path, callback, errorCallback) {
   xhr.send();
 }
 
-// TODO: Render all or filtered items as cards
+
 function renderItems(filteredItems) {
   catalogue.innerHTML = '';
-  // Students: create article.card elements
+  // create article.card elements
   // include img, h3 (name), p.price, p.category, p.rating
-  // add button "Add to Cart"
 
   //if there is no item in items, print "No matches found."
   if (filteredItems.length === 0){
@@ -84,18 +83,16 @@ function renderItems(filteredItems) {
 
 }
 
-// TODO: Populate category dropdown + fake option
+
 function populateCategories() {
-  // Students: collect unique categories
-  // add "all" and one fake category (e.g. "Quantum Mods")
+  // collect unique categories
 
   // adding all elements into a set (unique)
   const categories = new Set();
   items.forEach(item => {
     const itemCategory = item.category ;
-  categories.add(itemCategory) 
+    categories.add(itemCategory) ;
   })
-  categories.add("FakeCategory") ;
   // transfer to array so that can sort the items
   const categoryArray = Array.from(categories).sort() ;
   //console.log(categoryArray)
@@ -118,9 +115,8 @@ function populateCategories() {
 
 }
 
-// TODO: Apply category filter + search highlight
 function updateDisplay() {
-  // Students: filter by category
+  // filter by category
   // then highlight cards matching search term (only visible ones)
 
   // create a new arry containing only the the elements that match the condition
@@ -152,10 +148,8 @@ function updateDisplay() {
 
 }
 
-// TODO: Add one item to cart (simple count of unique items)
 function addToCart(itemId) {
-  // Students: increment cartCount
-  // update cartDisplay text
+  // increment cartCount, update cartDisplay text
   cartCount++;
   cartDisplay.textContent = `
     Cart: ${cartCount} items

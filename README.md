@@ -6,7 +6,7 @@ GameForge Catalogue is a simple e-shop for digital games that let users purchase
 ## 🚀 Key Features
 - **Dynamic Data Rendering:** Items are asynchronously loaded from artifacts.json and rendered as responsive cards.
 - **Advanced Filtering System:**
-    - **Category Filter:** Automatically generates a unique list of categories from the source data, including an "All Categories" option that will display all the cards and also a fake category, displayed as "FakeCategory"
+    - **Category Filter:** Automatically generates a unique list of categories from the source data, including an "All Categories" option that will display all the cards.
     - **Real-time Search Highlighting:** Highlighting the card by a case-insensitive searching feature without hiding non-matches.
 - **Interactive Shopping Cart:**
     - Incrementing the total item added in the card and displaying in the header.
